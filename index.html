@@ -328,6 +328,7 @@ section[id]{scroll-margin-top:72px}
 .pol.tall{grid-row:span 2;cursor:default}
 .pol.tall .media{aspect-ratio:auto;flex:1;min-height:0}
 .pol .vwrap{position:absolute;inset:0}
+.pol video.pos-low{object-position:50% 70%}
 div.pol{cursor:default}
 .pol .cap{display:block;font-family:var(--script);font-size:27px;color:var(--brick);padding:8px 4px 10px;line-height:1.1}
 .follow{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:50px}
@@ -543,7 +544,7 @@ div.pol{cursor:default}
           </div>
         </div>
         <div class="badge"><small>from</small><b>RM35</b></div>
-        <img class="mini" src="assets/prepleat-red.jpg" alt="Red silk saree, pre-pleated and folded" width="118" height="118" loading="lazy">
+        <img class="mini" src="assets/pleats-magenta.jpg" alt="Close-up of a pre-pleated magenta silk saree with gold border" width="118" height="118" loading="lazy">
       </div>
     </div>
   </section>
@@ -564,12 +565,12 @@ div.pol{cursor:default}
       <div class="tile m-a" data-reveal>
         <h2>Pre-Pleating, Perfected</h2>
         <div class="row">
-          <img class="circle" src="assets/prepleat-red.jpg" alt="Pre-pleated red and gold silk saree" loading="lazy">
+          <img class="circle" src="assets/pleats-orange.jpg" alt="Even pleats on an orange silk saree with a dark gold border" loading="lazy">
           <p>Pleats measured, folded and ironed into place, so your saree is ready to wear in minutes.</p>
         </div>
       </div>
       <div class="tile m-b" data-reveal><p>Neat pleats make <em>the whole look.</em></p></div>
-      <div class="tile m-c" data-reveal><img src="assets/prepleat-yellow.jpg" alt="Yellow and pink saree with crisp pre-pleats" loading="lazy"></div>
+      <div class="tile m-c" data-reveal><img src="assets/prepleat-magenta.jpg" alt="Magenta silk saree, pre-pleated and ready on a hanger" loading="lazy"></div>
       <div class="tile m-d" data-reveal><img src="assets/hairdo.jpg" alt="Puffed ponytail hairdo with soft curls and a floral garland" loading="lazy"></div>
       <div class="tile m-e" data-reveal>
         <h3>Hairdos for Every Occasion</h3>
@@ -578,7 +579,7 @@ div.pol{cursor:default}
       </div>
       <div class="tile m-f" data-reveal>
         <p>For drapes, <strong>we come to your event location</strong>, so you can relax and get ready without the rush.</p>
-        <img class="circle" src="assets/drape-portrait.jpg" alt="Smiling client in a draped purple saree" loading="lazy">
+        <img class="circle" src="assets/beach-portrait.jpg" alt="Client in a draped plum silk saree with gold pallu, outdoors by the sea" loading="lazy">
       </div>
     </div>
   </section>
@@ -704,7 +705,7 @@ div.pol{cursor:default}
         <div class="price-row"><div class="name"><b>Transportation fee</b><small>Ipoh &amp; surrounding areas</small></div><span class="dots"></span><span class="amt sm">Varies on distance</span></div>
         <p class="price-foot">Final price, including transport, is confirmed with you on WhatsApp.</p>
       </div>
-      <img class="price-circle" src="assets/festive-portrait.jpg" alt="Client in maroon and gold saree with jasmine in her hair" loading="lazy">
+      <img class="price-circle" src="assets/drape-portrait.jpg" alt="Smiling client in a draped purple silk saree" loading="lazy">
       <div class="after"><a class="btn" href="#book">Book your appointment</a></div>
     </div>
   </section>
@@ -757,7 +758,17 @@ div.pol{cursor:default}
           </div>
           <div class="cap">Elegant Drapes</div>
         </div>
-        <button class="pol" type="button" data-reveal data-lightbox="assets/prepleat-red.jpg" data-caption="Neat Pleats"><span class="media"><img src="assets/prepleat-red.jpg" alt="Pre-pleated red silk saree" loading="lazy"></span><span class="cap">Neat Pleats</span></button>
+        <div class="pol" data-reveal>
+          <div class="media">
+            <div class="vwrap">
+              <video class="pos-low" data-autoplay muted loop playsinline preload="none" poster="assets/neat-pleats-poster.jpg" aria-label="Pre-pleated magenta silk saree on a hanger, turned to show the pleats">
+                <source src="assets/neat-pleats.mp4" type="video/mp4">
+              </video>
+              <button class="play-btn" type="button" aria-label="Play video"><svg><use href="#i-play"/></svg></button>
+            </div>
+          </div>
+          <div class="cap">Neat Pleats</div>
+        </div>
         <div class="pol" data-reveal>
           <div class="media">
             <div class="vwrap">
@@ -769,8 +780,18 @@ div.pol{cursor:default}
           </div>
           <div class="cap">Beautiful Hairdos</div>
         </div>
-        <button class="pol" type="button" data-reveal data-lightbox="assets/drape-purple.jpg" data-caption="Complete Look"><span class="media"><img src="assets/drape-purple.jpg" alt="Purple silk saree drape, side view" loading="lazy"></span><span class="cap">Complete Look</span></button>
-        <button class="pol" type="button" data-reveal data-lightbox="assets/prepleat-yellow.jpg" data-caption="Ready to Wear"><span class="media"><img src="assets/prepleat-yellow.jpg" alt="Yellow saree with pink border, pre-pleated" loading="lazy"></span><span class="cap">Ready to Wear</span></button>
+        <button class="pol" type="button" data-reveal data-lightbox="assets/complete-look.jpg" data-caption="Complete Look"><span class="media"><img src="assets/complete-look.jpg" alt="Client in a draped plum silk saree with gold pallu on the beach" loading="lazy"></span><span class="cap">Complete Look</span></button>
+        <div class="pol" data-reveal>
+          <div class="media">
+            <div class="vwrap">
+              <video class="pos-low" data-autoplay muted loop playsinline preload="none" poster="assets/ready-to-wear-poster.jpg" aria-label="Pre-pleated orange silk saree on a hanger, ready to wear">
+                <source src="assets/ready-to-wear.mp4" type="video/mp4">
+              </video>
+              <button class="play-btn" type="button" aria-label="Play video"><svg><use href="#i-play"/></svg></button>
+            </div>
+          </div>
+          <div class="cap">Ready to Wear</div>
+        </div>
       </div>
       <div class="follow" data-reveal>
         <a class="btn outline" href="https://www.instagram.com/wrapandwave_2505/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-ig"/></svg>Instagram</a>
